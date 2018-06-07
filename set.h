@@ -5,6 +5,7 @@ using namespace std;
 
 #ifndef SET_H
 #define SET_H
+
 template<class X>class set{
 private:
   int SET_SIZE;
@@ -125,7 +126,8 @@ public:
     root = nullptr;
     SET_SIZE = 0;
   }
-
+  
+  // for command line
   void controll(){
     string str;
     int n;
@@ -146,13 +148,13 @@ public:
         cout << "cleared" << endl;
       }else if(str == "erase" || str == "remove"){
         cin >> n;
-        if(erase(n) == true){
+        if(erase(n)){
           cout << "OK" << endl;
         }else{
           cout << "False" << endl;
         }
       }else if(str == "size"){
-        cout << "Size -> " << size() << endl;
+        cout << "Size : " << size() << endl;
       }else if(str == "print"){
         display();
       }else if(str == "end" || str == "exit"){
