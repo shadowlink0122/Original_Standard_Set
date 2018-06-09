@@ -1,2 +1,2 @@
-# Original_Standard_Set-
+# Original_Standard_Set
 For C++
